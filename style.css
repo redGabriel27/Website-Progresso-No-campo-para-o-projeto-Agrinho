@@ -1,0 +1,47 @@
+:root{
+    --black-primary: #232323;
+    --green-primary: #2DA169;
+}
+#banner{
+    display: flex;
+    margin: auto;
+    width: 65vw;
+    border-radius: 10px;
+    box-shadow: var(--black-primary) 0px 5px 15px;
+
+}
+
+#navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--black-primary);
+    height: 10vh;
+    margin: -10px -2% 80px -2%;
+    box-shadow: var(--black-primary) 0px 5px 15px;
+}
+
+#logo{
+    height: 15vh;
+    display: block;
+    margin-bottom: -10px;
+}
+
+li{
+    color: white;
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+li:hover{
+    box-shadow: var(--green-primary) 0px 2px 0px;
+    font-size: large;
+}
+
+@media only screen and (max-width: 768px) { 
+    #logo {
+      display: none;
+    }
+  }
