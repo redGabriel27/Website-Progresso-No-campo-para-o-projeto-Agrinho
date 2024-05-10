@@ -2,10 +2,19 @@
     --black-primary: #232323;
     --green-primary: #2DA169;
 }
+
+* {
+    overflow-x: hidden; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 #banner{
     display: flex;
     margin: auto;
-    width: 65vw;
+    width: 64vw;
     border-radius: 10px;
     box-shadow: var(--black-primary) 0px 5px 15px;
 
@@ -40,8 +49,84 @@ li:hover{
     font-size: large;
 }
 
+/* Seções */
+#sections {
+    background-color: var(--green-primary);
+    margin: 45vh auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#sections h1{
+    color: white;
+    padding: 80px 80px 330px 80px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    position: absolute;
+    top: 135vh;
+    background-color: white;
+    color: var(--black-primary);
+    text-align: center;
+    padding: 65px;
+    box-shadow: var(--black-primary) 0px 5px 15px;
+    margin: 0 38vw 0 38vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_milho {
+    left: 33vw;
+    top: 150vh;
+}
+
+.section_trigo {
+    right: 30vw;
+    top: 150vh;
+}
+
+.section h2 {
+    box-shadow: var(--black-primary) 0px 2px 0px;
+    margin-bottom: 10px;
+}
+
+.section a {
+    text-decoration: none;
+    display: flex;
+    margin: 40px 100px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--black-primary);
+}
+
+.section a:hover {
+    background-color: var(--green-primary);
+}
+
+/* Responsividade */
 @media only screen and (max-width: 768px) { 
     #logo {
       display: none;
+    }
+
+    .section_soja {
+        left: -30vw;
+        top: 135vh;
+    }
+
+    .section_milho {
+        left: -30vw;
+        top: 210vh;
+    }
+    
+    .section_trigo {
+        right: -30vw;
+        top: 280vh;
+    }
+
+    #banner {
+        width: 66vh;
     }
   }
