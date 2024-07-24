@@ -1,6 +1,7 @@
 :root{
     --black-primary: #232323;
     --green-primary: #2DA169;
+    --green-secondary: #248857;
 }
 
 * {
@@ -8,16 +9,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-#banner{
-    display: flex;
-    margin: auto;
-    width: 64vw;
-    border-radius: 10px;
-    box-shadow: var(--black-primary) 0px 5px 15px;
-
 }
 
 #navbar{
@@ -51,58 +42,41 @@ li:hover{
 
 /* Seções */
 #sections {
-    background-color: var(--green-primary);
-    margin: 45vh auto;
+    margin: 6vh auto;
     justify-content: space-around;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #sections h1{
-    color: white;
-    padding: 80px 80px 330px 80px;
+    padding: 80px 80px 140px 80px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.section {
-    position: absolute;
-    top: 135vh;
-    background-color: white;
-    color: var(--black-primary);
-    text-align: center;
-    padding: 65px;
-    box-shadow: var(--black-primary) 0px 5px 15px;
-    margin: 0 38vw 0 38vw;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.section_milho {
-    left: 33vw;
-    top: 150vh;
-}
-
-.section_trigo {
-    right: 30vw;
-    top: 150vh;
-}
-
-.section h2 {
-    box-shadow: var(--black-primary) 0px 2px 0px;
-    margin-bottom: 10px;
-}
-
-.section a {
-    text-decoration: none;
-    display: flex;
-    margin: 40px 100px;
-    padding: 10px;
-    border-radius: 30px;
-    color: white;
-    background-color: var(--black-primary);
-}
-
-.section a:hover {
+.section_primeira {
+    border-radius: 10% 10% 0% 0%;
     background-color: var(--green-primary);
+    text-align: center;
+}
+
+.section_segunda {
+    background-color: var(--green-secondary);
+    padding-bottom: 30vh;
+    text-align: center;
+}
+
+.section_terceira {
+    background-color: var(--green-primary);
+    padding-bottom: 30vh;
+    text-align: center;
+}
+
+.section_quarta {
+    border-radius: 0% 0% 10% 10%;
+    background-color: var(--green-secondary);
+    padding-bottom: 30vh;
+    text-align: center;
 }
 
 /* Responsividade */
@@ -111,22 +85,4 @@ li:hover{
       display: none;
     }
 
-    .section_soja {
-        left: -30vw;
-        top: 135vh;
-    }
-
-    .section_milho {
-        left: -30vw;
-        top: 210vh;
-    }
-    
-    .section_trigo {
-        right: -30vw;
-        top: 280vh;
-    }
-
-    #banner {
-        width: 66vh;
-    }
   }
