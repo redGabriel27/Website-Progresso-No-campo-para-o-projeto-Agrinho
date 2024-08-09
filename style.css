@@ -1,9 +1,11 @@
+/* Variáveis de cores */
 :root{
-    --black-primary: #232323;
-    --green-primary: #2DA169;
-    --green-secondary: #248857;
+    --preto-primario: #232323;
+    --verde-primario: #2DA169;
+    --verde-secundario: #248857;
 }
 
+/* Faz a devida estilização a todos */
 * {
     overflow-x: hidden; 
     padding: 0;
@@ -11,37 +13,42 @@
     box-sizing: border-box;
 }
 
-#navbar{
+/* Barra do website com anchors/butões que leva a diferentes seções */
+#barra{
     display: flex;
     position: relative;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--black-primary);
+    background: var(--preto-primario);
     height: 10vh;
     margin: -10px -2% 80px -2%;
-    box-shadow: var(--black-primary) 0px 5px 15px;
+    box-shadow: var(--preto-primario) 0px 5px 15px;
 }
 
+/* Logo do website feita por mim */
 #logo{
     height: 15vh;
     display: block;
     margin-bottom: -10px;
 }
 
-li{
+/* Estilização das anchors que leva até a devida seção */
+a {
     color: white;
     letter-spacing: 4px;
     list-style: none;
+    text-decoration: none;
 }
 
-li:hover{
-    box-shadow: var(--green-primary) 0px 2px 0px;
+/* Ao passar o mouse por cima na anchor aparece uma linha verde em baixo e aumenta a font */
+a:hover{
+    box-shadow: var(--verde-primario) 0px 2px 0px;
     font-size: large;
 }
 
 /* Seções */
-#sections {
+.seções {
     margin: 6vh auto;
     justify-content: space-around;
     width: 100%;
@@ -49,40 +56,54 @@ li:hover{
     color: white;
 }
 
-#sections h1{
+.seções h1{
     padding: 80px 80px 140px 80px;
     text-align: center;
 }
 
-.section_primeira {
+/* Seção primária onde explica oque queremos alcançar com este site */
+#seção_primaria {
     border-radius: 10% 10% 0% 0%;
-    background-color: var(--green-primary);
+    background-color: var(--verde-primario);
     text-align: center;
 }
 
-.section_segunda {
-    background-color: var(--green-secondary);
+/* Seção do trigo, explicando o processo deste plantio do campo até a cidade */
+#seção_trigo {
+    background-color: var(--verde-secundario);
     padding-bottom: 30vh;
     text-align: center;
 }
 
-.section_terceira {
-    background-color: var(--green-primary);
+/* Seção da soja, explicando o processo deste plantio do campo até a cidade */
+#seção_soja {
+    background-color: var(--verde-primario);
     padding-bottom: 30vh;
     text-align: center;
 }
 
-.section_quarta {
+/* Seção do milho, explicando o processo deste plantio do campo até a cidade */
+#seção_milho {
     border-radius: 0% 0% 10% 10%;
-    background-color: var(--green-secondary);
+    background-color: var(--verde-secundario);
     padding-bottom: 30vh;
     text-align: center;
+}
+
+/* Este é a estilização do footer onde fica os contatos */
+#contato {
+    border-radius: 20% 20% 0% 0%;
+    background-color: var(--verde-secundario);
+    color: white;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
 }
 
 /* Responsividade */
 @media only screen and (max-width: 768px) { 
+    /* Remove a logo para encaixar melhor ao dispositivo móvel */
     #logo {
       display: none;
     }
-
   }
