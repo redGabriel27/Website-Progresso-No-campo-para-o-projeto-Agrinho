@@ -104,6 +104,10 @@ a:hover{
 @media only screen and (max-width: 768px) { 
     /* Remove a logo para encaixar melhor ao dispositivo móvel */
     #logo {
-      display: none;
+      text-align: center;
+    }
+
+    a {
+        display: none;
     }
   }
